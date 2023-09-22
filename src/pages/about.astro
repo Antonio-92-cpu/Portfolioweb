@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import myImage from "../fondo.jpg";
+---
+
+<Layout title="Sobre mí">
+	<main>
+
+		Sobre mí
+
+		<header>
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#">OYU</a></li>
+						<li><a href="">PORTFOLIO</a></li>
+						<li><a href="">GALERIA</a></li>
+						<li><a href="">SOBRE MI</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div>
+			<Image src={myImage} alt="Un pájaro."/>
+		</div>
+        <footer>
+
+        </footer>
+	</main>
