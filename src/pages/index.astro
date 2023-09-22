@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import myImage from "../fondo.jpg";
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+
 		Portfolio Oyu
+
 		<header>
 			<div class="container">
 				<nav>
@@ -13,14 +17,14 @@ import Card from '../components/Card.astro';
 						<li><a href="#">OYU</a></li>
 						<li><a href="">PORTFOLIO</a></li>
 						<li><a href="">GALERIA</a></li>
-						<li><a href="">ENCARGOS</a></li>
 						<li><a href="">SOBRE MI</a></li>
-						<li><a href="">F.A.Q</a></li>
-						<li><a href="">T.O.S</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+		<div>
+			<Image src={myImage} alt="Un pájaro."/>
+		</div>
 	</main>
 	
 	<style>
