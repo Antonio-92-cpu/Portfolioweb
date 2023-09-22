@@ -7,9 +7,6 @@ import myImage from "../fondo.jpg";
 
 <Layout title="Welcome to Astro.">
 	<main>
-
-		Portfolio Oyu
-
 		<header>
 			<div class="container">
 				<nav>
@@ -22,23 +19,34 @@ import myImage from "../fondo.jpg";
 				</nav>
 			</div>
 		</header>
-		<div>
+		<marquee><h1>ESTA PÁGINA ESTA EN COSNTRUCCIÓN FECHA DE FINALIZACIÓN MARTES 26</h1></marquee>
+		<div class="imagenfondo">
 			<Image src={myImage} alt="Un pájaro."/>
 		</div>
+		<footer>
+
+		</footer>
 	</main>
 	
 	<style>
-		.container {
-			max-width: 1200px;
-    		margin: 0 auto;
-   			padding: 20px;
-			justify-content: space-between;
-		}
 
+	.imagenfondo{
+		background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+
+	}
+
+		.container {
+    		margin: 0 auto;
+   			padding: 0px;
+		}
+		
   nav {
     text-align: right; 
-    background-color: #333; 
-    padding: 10px 0; 
+    text-color: #FFF; 
+    padding: 10px 0;
+	z-index: 999;
   }
 
   nav ul {
@@ -64,12 +72,10 @@ import myImage from "../fondo.jpg";
   .fondo {
     background-image: url('../fondo.jpg');
   }
+  
+h1 {
+	color:white;
+}
+
 	</style>
-
-
-<astro-fragment>
-  <div class="fondo">
-    
-  </div>
-</astro-fragment>
 	</Layout>
