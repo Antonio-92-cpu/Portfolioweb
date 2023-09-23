@@ -20,8 +20,8 @@ import myImage from "../fondo.jpg";
 			</div>
 		</header>
 		<marquee><h1>ESTA PÁGINA ESTA EN COSNTRUCCIÓN FECHA DE FINALIZACIÓN MARTES 26</h1></marquee>
-		<div class="imagenfondo">
-			<Image src={myImage} alt="Un pájaro."/>
+		<div class="fondo">
+			<Image src={myImage} alt="Un pájaro." width="200px" ;/>
 		</div>
 		<footer>
 
@@ -29,13 +29,6 @@ import myImage from "../fondo.jpg";
 	</main>
 	
 	<style>
-
-	.imagenfondo{
-		background-attachment: fixed;
-    	background-position: center;
-    	background-repeat: no-repeat;
-
-	}
 
 		.container {
     		margin: 0 auto;
@@ -69,8 +62,12 @@ import myImage from "../fondo.jpg";
     text-decoration: none; 
   }
 
-  .fondo {
-    background-image: url('../fondo.jpg');
+ 	 .fondo {
+    	background-image: url('../fondo.jpg');
+		background-attachment: fixed;
+    	background-position: center;
+    	background-repeat: no-repeat;
+		
   }
   
 h1 {
