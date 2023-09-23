@@ -3,12 +3,13 @@ import React from 'react';
 function Navbar() {
   return (
     <nav>
-      <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/acerca-de">Acerca de</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <ul>
+        <li><a href="#">OYU</a></li>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">GALERIA</a></li>
+        <li><a href="">SOBRE MI</a></li>
+    </ul>
+</nav>
   );
 }
 
