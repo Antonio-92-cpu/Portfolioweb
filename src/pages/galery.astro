@@ -1,6 +1,9 @@
 ---
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { Image } from 'astro:assets';
+import myImage from "../fondo.jpg";
 ---
-
 <Navbar client:load/>
+<Image src={myImage} alt="Un pájaro sentado sobre un nido de huevos."/>
+
