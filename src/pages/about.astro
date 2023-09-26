@@ -1,15 +1,17 @@
+---
 import React from 'react';
 import '../components/reset.css';
 import Layout from '../layouts/Layout';
 import { Image } from 'astro:assets';
 import fondo from '../fondo.jpg';
+---
 
 const AboutPage = () => {
   return (
     <Layout title="Sobre mí">
       <main>
         <header>
-          <div className="container">
+          <div class="container">
             <nav>
               <ul>
                 <li><a href="/index.astro">OYU</a></li>
@@ -21,7 +23,7 @@ const AboutPage = () => {
           </div>
         </header>
         <div>
-          <img src={fondo} alt="Un pájaro." />
+          <img ={fondo} alt="Un pájaro." />
         </div>
         <div>
           <p>
@@ -33,10 +35,10 @@ const AboutPage = () => {
           </p>
         </div>
         <h1>Habilidades</h1>
-        <div className="skills">
-          <div className="circular-progress html5"></div>
-          <div className="circular-progress css3"></div>
-          <div className="circular-progress jscript"></div>
+        <div class="skills">
+          <div class="circular-progress html5"></div>
+          <div class="circular-progress css3"></div>
+          <div class="circular-progress jscript"></div>
         </div>
         <footer></footer>
       </main>
