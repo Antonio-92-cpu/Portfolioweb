@@ -1,0 +1,35 @@
+body {
+    background: #000;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+  .circular-progress {
+    position: relative;
+    margin: auto;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+  .circular-progress:before,
+  .circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  .circular-progress:before {
+    line-height: 8rem;
+    padding: .5em;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+  }
+  .circular-progress:after {
+    line-height: 13rem;
+  }
+  .skills {
+    display: flex;
+    margin-top: 4em;
+    flex-wrap: wrap;
+  }
