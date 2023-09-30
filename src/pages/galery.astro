@@ -1,18 +1,20 @@
-import React from 'react';
-import '../components/reset.css';
-import Navbar from '../components/Navbar';
-import { Image } from 'astro:assets';
-import myImage from "../fondo.jpg";
-import Footer from "../components/Footer";
+---
+import React from 'react'
+import '../components/reset.css'
+import Navbar from '../components/Navbar'
+import { Image } from 'astro:assets'
+import myImage from "../fondo.jpg"
+import Footer from "../components/Footer"
+---
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Image src={myImage} alt="Un pájaro sentado sobre un nido de huevos." width="1050" />
-      <Footer />
-    </div>
-  );
+astro {
+  default
 }
 
-export default App;
+render {
+  <div>
+    <Navbar />
+    <Image src={myImage} alt="Un pájaro sentado sobre un nido de huevos." width="1050" />
+    <Footer />
+  </div>
+}
